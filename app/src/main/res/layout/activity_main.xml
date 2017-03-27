@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="@null"
-                android:hint="User Name"
+                android:hint="@string/user_name"
                 android:paddingBottom="8dp"
                 android:paddingLeft="8dp"
                 android:paddingTop="8dp"
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="22dp"
             android:background="@null"
-            android:hint="Password"
+            android:hint="@string/password"
             android:paddingBottom="8dp"
             android:paddingLeft="8dp"
             android:paddingTop="8dp"
@@ -79,7 +79,7 @@
             android:background="@drawable/buttonbackfroung"
 
             android:layout_gravity="center"
-            android:text="Login"
+            android:text="@string/login"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="23sp" />
 
@@ -88,7 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:gravity="center"
-            android:text="Not Registered? Signup"
+            android:text="@string/register"
             android:textColor="@color/white"
             android:textSize="16sp" />
     </LinearLayout>

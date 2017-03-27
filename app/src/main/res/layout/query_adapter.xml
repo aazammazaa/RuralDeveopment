@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
-        android:text="questions"
+        android:text="@string/questions"
         android:background="@color/white"
         />
 

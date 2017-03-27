@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">Kisaan Kalyaan</string>
     <!--<string name="app_name">Rural_dev</string>-->
+    <string name="user_name">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Not Registered? Signup</string>
+    <string name="ask_your_question">Ask Your Question</string>
+    <string name="my_asked_questions">My Asked Questions</string>
+    <string name="questions_found_similar">questions found similar</string>
+    <string name="submit">Submit</string>
+    <string name="search_for_queries">Search for queries</string>
+    <string name="done">Done</string>
+    <string name="questions">questions</string>
+    <string name="enter_your_queries_here">Enter your queries here</string>
 </resources>

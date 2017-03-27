@@ -34,7 +34,7 @@
                 android:layout_height="match_parent"
                 android:textColor="@color/white"
                 android:textSize="25sp"
-                android:text="questions found similar"/>
+                android:text="@string/questions_found_similar"/>
 
         </LinearLayout>
         <android.support.v7.widget.RecyclerView
@@ -55,7 +55,7 @@
         android:paddingBottom="10dp"
         android:textColor="@color/background"
         android:background="@drawable/backgroundgrey"
-        android:text="Submit"
+        android:text="@string/submit"
         android:layout_margin="8dp"
         android:textSize="23sp"
         android:layout_alignParentBottom="true"/>
