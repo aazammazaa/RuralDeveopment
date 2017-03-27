@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingBottom="8dp"
-    android:background="@color/transparent"
+    android:background="@drawable/background"
     tools:context="com.sirt.teamdrd.ruraldeveopment.Activity.SearchQuery">
     <RelativeLayout
         android:id="@+id/myquestion"
@@ -15,13 +15,14 @@
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:paddingLeft="10dp"
-        android:background="@color/colorAccent">
+        android:background="@null">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="My Asked Question"
+            android:text="My Asked Questions"
+            android:gravity="center"
             android:textSize="23dp"
-            android:textColor="@color/background"
+            android:textColor="@color/white"
             />
     </RelativeLayout>
     <RelativeLayout

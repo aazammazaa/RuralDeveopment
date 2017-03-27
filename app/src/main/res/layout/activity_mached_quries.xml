@@ -4,51 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
 
     tools:context="com.sirt.teamdrd.ruraldeveopment.Activity.MachedQuries">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_alignParentTop="true"
         android:layout_above="@+id/submit"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-
-        >
+        android:layout_centerHorizontal="true">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_horizontal"
             android:padding="8dp"
-            android:background="@color/colorAccent"
+            android:background="@null"
             >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:textColor="@color/background"
+                android:textColor="@color/white"
                 android:textSize="25sp"
                 android:text="7 "/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:textColor="@color/background"
+                android:textColor="@color/white"
                 android:textSize="25sp"
-                android:text="Question Found Similar"/>
+                android:text="questions found similar"/>
 
         </LinearLayout>
         <android.support.v7.widget.RecyclerView
             android:id="@+id/query_recycler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="7dp"
-            android:paddingRight="7dp"
-            android:paddingBottom="5dp"
-            android:background="@color/colorAccent">
+            android:padding="8dp"
+            android:background="@null">
 
         </android.support.v7.widget.RecyclerView>
 
@@ -60,8 +54,9 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:textColor="@color/background"
+        android:background="@drawable/backgroundgrey"
         android:text="Submit"
-        android:textSize="25sp"
+        android:layout_margin="8dp"
+        android:textSize="23sp"
         android:layout_alignParentBottom="true"/>
-
 </RelativeLayout>

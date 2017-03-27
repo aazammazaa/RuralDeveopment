@@ -5,69 +5,92 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:paddingTop="120dp"
     android:paddingLeft="40dp"
     android:paddingRight="40dp"
+    android:paddingTop="120dp"
     tools:context="com.sirt.teamdrd.ruraldeveopment.Activity.MainActivity">
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:orientation="vertical"
-       android:padding="16dp"
-       android:layout_centerHorizontal="true"
-       >
-       <EditText
-           android:id="@+id/username"
-           android:background="@drawable/textbackground"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:textColor="@color/colorAccent"
-           android:hint="User Name"
-           android:textSize="23sp"
-           android:paddingLeft="8dp"
-           android:paddingTop="8dp"
-           android:paddingBottom="8dp"
-           android:textColorHint="@color/border"
-           android:layout_marginBottom="15dp"
-           />
-       <EditText
-           android:id="@+id/password"
-           android:background="@drawable/textbackground"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:textColor="@color/colorAccent"
-           android:hint="Password"
-           android:textSize="23sp"
-           android:paddingLeft="8dp"
-           android:paddingTop="8dp"
-           android:paddingBottom="8dp"
-           android:textColorHint="@color/border"
-           android:layout_marginBottom="22dp"
-           />
-       <Button
-           android:id="@+id/loginbutton"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:textColor="@color/colorAccent"
-           android:text="Login"
-           android:paddingLeft="8dp"
-           android:paddingTop="8dp"
-           android:paddingBottom="8dp"
-           android:textSize="23sp"
-           android:background="@drawable/buttonbackfroung"/>
-       <Button
-           android:id="@+id/registerbutton"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:textColor="@color/colorAccent"
-           android:text="Register"
-           android:layout_marginTop="16dp"
-           android:paddingLeft="8dp"
-           android:paddingTop="8dp"
-           android:paddingBottom="8dp"
-           android:textSize="23sp"
-           android:background="@drawable/buttonbackfroung"/>
-   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_person" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@null"
+                android:hint="User Name"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/white"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_vpn_key" />
+
+        <EditText
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:background="@null"
+            android:hint="Password"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/white"
+            android:textSize="23sp" />
+    </LinearLayout>
+        <Button
+            android:id="@+id/loginbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/buttonbackfroung"
+
+            android:layout_gravity="center"
+            android:text="Login"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="23sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="Not Registered? Signup"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
 
 </RelativeLayout>
