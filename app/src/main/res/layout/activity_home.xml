@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    >
+    <Button
+        android:id="@+id/otherqueries"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search For Queries"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textSize="23sp"
+        android:textColor="@color/background"
+        android:background="@color/itembackground"
+        android:textAlignment="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="38dp"
+        android:layout_below="@+id/otherqueries"
+        android:layout_above="@+id/myqueries">
+        <EditText
+            android:id="@+id/querytext"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/white"
+            android:textColor="@color/colorAccent"
+            android:gravity="start"
+            android:padding="8dp"
+            android:hint="Enter your Queries Here"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/queryask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ASK"
+            android:textColor="@color/background"
+            android:background="@color/itembackground"
+            android:textSize="23sp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/querytext"
+            android:layout_alignRight="@+id/querytext"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/myqueries"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Asked Question"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/background"
+        android:textSize="23sp"
+        android:background="@color/itembackground"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

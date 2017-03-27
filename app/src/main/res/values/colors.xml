@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7CB342</color>
+    <color name="colorPrimaryDark">#558B2F</color>
+    <color name="colorAccent">#a697a9</color>
+    <color name="background">#a2c62e</color>
+    <color name="border">#545454</color>
+    <color name="transparent">#50646464</color>
+    <color name="white">#ffffff</color>
+    <color name="buttonbackground">#000000</color>
+    <color name="itembackground">#d9e1df</color>
+    <color name="transparent2">#00ffffff</color>
+    <color name="blue">#027157</color>
+</resources>

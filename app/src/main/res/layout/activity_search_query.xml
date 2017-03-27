@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:background="@color/transparent"
+    tools:context="com.sirt.teamdrd.ruraldeveopment.Activity.SearchQuery">
+    <RelativeLayout
+        android:id="@+id/myquestion"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:paddingLeft="10dp"
+        android:background="@color/colorAccent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Asked Question"
+            android:textSize="23dp"
+            android:textColor="@color/background"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:background="@color/itembackground">
+        <EditText
+            android:id="@+id/searchkeyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ask Your Question"
+            android:textSize="23dp"
+            android:layout_toLeftOf="@+id/searchbutton"
+            android:textColor="@color/background"
+            />
+        <ImageButton
+            android:id="@+id/searchbutton"
+            android:src="@drawable/ic_search_white_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:background="@color/transparent2"
+            />
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/query_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+    
+
+</LinearLayout>

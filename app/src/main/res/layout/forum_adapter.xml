@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="5dp"
+        cardCornerRadius="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00ffffff"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="45dp"
+                    android:background="#00ffffff"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:layout_height="45dp"
+                    />
+
+                <TextView
+                    android:id="@+id/farmermer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="person name"
+                    android:textColor="@color/background"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_below="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                >
+                <TextView
+                    android:id="@+id/query"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textSize="20dp"
+                    android:text="Query or answer"
+                    android:textColor="@color/background"
+                    />
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/askquery"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textColor="@color/background"
+                    android:textSize="20dp"
+                    android:hint="Query or answer"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_below="@id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email : user@gmail.com"
+                    android:textColor="@color/background"
+                    />
+                <TextView
+                    android:id="@+id/batch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Batch Level : 7"
+                    android:textColor="@color/background"
+                    />
+                <Button
+                    android:id="@+id/likeorsubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="like"
+                    android:textColor="@color/background"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>
