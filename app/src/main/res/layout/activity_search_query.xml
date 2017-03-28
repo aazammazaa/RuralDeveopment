@@ -37,7 +37,7 @@
             android:text="@string/ask_your_question"
             android:textSize="23dp"
             android:layout_toLeftOf="@+id/searchbutton"
-            android:textColor="@color/background"
+            android:textColor="@color/colorPrimaryDark"
             />
         <ImageButton
             android:id="@+id/searchbutton"

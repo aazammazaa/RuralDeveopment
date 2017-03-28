@@ -20,8 +20,8 @@
         android:paddingTop="8dp"
         android:textSize="20sp"
         android:layout_margin="8dp"
-        android:textColor="@color/background"
-        android:background="@drawable/backgroundgrey"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/buttonbackfroung"
         android:textAlignment="center"/>
     </LinearLayout>
 
@@ -48,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/done"
-            android:textColor="@color/background"
+            android:textColor="@color/colorPrimaryDark"
             android:background="@drawable/backgroundgrey"
             android:textSize="20sp"
             android:layout_alignBottom="@+id/querytext"
@@ -75,9 +75,9 @@
         android:text="@string/my_asked_questions"
         android:paddingBottom="8dp"
         android:paddingTop="8dp"
-        android:textColor="@color/background"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/buttonbackfroung"
         android:textSize="20sp"
-        android:background="@drawable/backgroundgrey"
         android:textAlignment="center"/>
     </LinearLayout>
 
