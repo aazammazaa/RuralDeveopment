@@ -27,6 +27,7 @@ public class SignupActivity extends BaseActivity {
             public void onClick(View v) {
                 Intent in = new Intent(getApplicationContext(), SignupTwoActivity.class);
                 startActivity(in);
+                overridePendingTransition(R.anim.slide_right, R.anim.slide_in);
             }
         });
     }
