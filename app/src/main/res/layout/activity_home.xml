@@ -10,19 +10,20 @@
         android:layout_height="wrap_content"
         android:background="@color/transparent"
         android:orientation="vertical">
-    <Button
-        android:id="@+id/otherqueries"
-        android:layout_alignParentTop="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/search_for_queries"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:background="@drawable/buttonbackfroung"
-        android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/otherqueries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/buttonbackfroung"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/search_for_queries"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <RelativeLayout

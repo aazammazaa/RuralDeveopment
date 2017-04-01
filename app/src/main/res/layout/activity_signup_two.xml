@@ -45,16 +45,18 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="23sp"/>
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    <ImageButton
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:id="@+id/next_button_two"
-        android:layout_width="74dp"
-        android:layout_height="74dp"
-        android:background="@drawable/roundbutton"
-        android:src="@drawable/ic_trending_flat_white_48dp" />
-    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="50dp">
+        <ImageButton
+            android:id="@+id/next_button_two"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/ic_action_keyboard_right" />
+        </LinearLayout>
 </LinearLayout>
