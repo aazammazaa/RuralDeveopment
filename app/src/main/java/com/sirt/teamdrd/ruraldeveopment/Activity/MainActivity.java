@@ -105,7 +105,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void onError(VolleyError error, String message, String tag) {
-
+        Toast.makeText(MainActivity.this, "No connection Available", Toast.LENGTH_SHORT).show();
     }
 
     private void login(String userName, String password, JSONObject loginJsonObj){
@@ -114,13 +114,17 @@ public class MainActivity extends BaseActivity {
             Toast.makeText(MainActivity.this, "No connection Available", Toast.LENGTH_SHORT).show();
             return;
         }
-        if(userName.isEmpty() &&password.isEmpty() ){
-            edUsername.setError(getResources().getString(R.string.null_user_error));
-            edPassword.setError(getResources().getString(R.string.null_password_error));
+        if(userName.isEmpty() && password.isEmpty() ){
+            //edUsername.setError(getResources().getString(R.string.null_user_error));
+            //edPassword.setError(getResources().getString(R.string.null_password_error));
+            Toast.makeText(MainActivity.this, getResources().getString(R.string.null_user_error), Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, getResources().getString(R.string.null_password_error), Toast.LENGTH_SHORT).show();
         }else  if(userName.isEmpty() ){
-            edUsername.setError(getResources().getString(R.string.null_user_error));
+            //edUsername.setError(getResources().getString(R.string.null_user_error));
+            Toast.makeText(MainActivity.this, getResources().getString(R.string.null_user_error), Toast.LENGTH_SHORT).show();
         }else if(password.isEmpty() ){
-            edPassword.setError(getResources().getString(R.string.null_password_error));
+            //edPassword.setError(getResources().getString(R.string.null_password_error));
+            Toast.makeText(MainActivity.this, getResources().getString(R.string.null_password_error), Toast.LENGTH_SHORT).show();
         }else{
 
             try {
