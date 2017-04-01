@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.android.volley.VolleyError;
+import com.sirt.teamdrd.ruraldeveopment.Activity.Util.Constant;
 import com.sirt.teamdrd.ruraldeveopment.R;
 
 import org.json.JSONObject;
@@ -17,14 +18,21 @@ import org.json.JSONObject;
  */
 
 public class SignupActivity extends BaseActivity {
+    //JSONObject jobj;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+
+        //jobj = new JSONObject();
+
         ImageButton btn = (ImageButton) findViewById(R.id.next_button);
         btn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
+                /*jobj.put("login_username",);
+                jobj.put("login_password");*/
                 Intent in = new Intent(getApplicationContext(), SignupTwoActivity.class);
                 startActivity(in);
             }
@@ -42,5 +50,6 @@ public class SignupActivity extends BaseActivity {
     public void onError(VolleyError error, String message, String tag) {
 
     }
+
 
 }
