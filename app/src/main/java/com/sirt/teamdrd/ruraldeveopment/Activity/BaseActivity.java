@@ -1,15 +1,18 @@
 package com.sirt.teamdrd.ruraldeveopment.Activity;
 
 
+import android.app.Activity;
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
+
 
 import com.android.volley.Cache;
 import com.android.volley.DefaultRetryPolicy;
@@ -33,7 +36,7 @@ import java.io.UnsupportedEncodingException;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
-    protected FragmentManager fm;
+    //protected FragmentManager fm;
 
     @Override
     protected void onResume() {
@@ -43,9 +46,9 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        fm = getSupportFragmentManager();
+        //fm = getSupportFragmentManager();
     }
-    ///////////
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -53,7 +56,9 @@ public abstract class BaseActivity extends AppCompatActivity {
         return true;
     }
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) { switch(item.getItemId()) {
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch(item.getItemId()) {
         case R.id.item1:
 
                 Intent in = new Intent(BaseActivity.this, ProfileActivity.class);
@@ -65,6 +70,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
         return super.onOptionsItemSelected(item);
     }
+    /////////
     public abstract void showProgress(Boolean show, String tag);
 
     public abstract void onSuccess(JSONObject response, String tag);
@@ -141,6 +147,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
         }
     }
+
 
 
 }

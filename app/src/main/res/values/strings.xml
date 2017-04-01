@@ -13,4 +13,11 @@
     <string name="done">Done</string>
     <string name="questions">questions</string>
     <string name="enter_your_queries_here">Enter your queries here</string>
+
+    <!--error of main activity-->
+    <string name="null_user_error">Please insert username</string>
+    <string name="wrong_user_error">Worng username</string>
+    <string name="null_password_error">Please insert password</string>
+    <string name="wrong_password_error">Wrong Password</string>
+    <string name="user_not_exists">User Name do not exist</string>
 </resources>
