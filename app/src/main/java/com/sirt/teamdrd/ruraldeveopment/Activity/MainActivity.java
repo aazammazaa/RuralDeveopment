@@ -104,7 +104,7 @@ public class MainActivity extends BaseActivity {
                     e.printStackTrace();
                 }
 
-                Intent in = new Intent(MainActivity.this, HomeActivity.class);
+                Intent in = new Intent(MainActivity.this, FrontActivity.class);
                 startActivity(in);
             }
             if(status == 400){

@@ -14,6 +14,7 @@ public class Constant {
 
     public static String API_BASE_URL = "http:/10.45.6.1/ruraldevelopment/";//"http://192.168.42.15/sqldevtest/";//"http://192.168.0.100/usedbook/";
     public static String LOGIN_RURAL = "ruralsignin.php";
+    public static String POST_RURAL = "post.php";
 
     //shared prefrences
 
@@ -23,7 +24,8 @@ public class Constant {
     public  static  String USER_EXPERTISELVL = "USER_EXPERTISELVL";
     public  static  String USER_TYPE = "USER_TYPE";
 
-
+    //post method
+    public  static  String CURRENT_QUESTION_ID = "CURRENT_QUERY";
 
 
 
