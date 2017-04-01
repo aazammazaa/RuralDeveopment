@@ -1,15 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif"
+        android:hint="First Name"
+        android:inputType="textCapWords"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="23sp"/>
+    <EditText
+        android:id="@+id/middlename"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif"
+        android:hint="Middle Name"
+        android:inputType="textCapWords"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="23sp" />
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif"
+        android:hint="Last Name"
+        android:inputType="textCapWords"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="23sp"/>
+    <EditText
+        android:id="@+id/date_of_birth"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif"
+        android:hint="Date Of Birth (dd/mm/yyyy)"
+        android:inputType="date"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="23sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:text="Gender"
+        android:textColor="@color/white"
+        android:textSize="23sp" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:buttonTint="@color/white"
+                android:fontFamily="sans-serif"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:text="Male"
+                android:textColor="@color/white"
+                android:textSize="23sp"/>
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:buttonTint="@color/white"
+                android:fontFamily="sans-serif"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:text="Female"
+                android:textColor="@color/white"
+                android:textSize="23sp"/>
 
+    </RadioGroup>
+    <EditText
+        android:id="@+id/mobile_number"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="23sp"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="23sp"/>
+    <EditText
+        android:id="@+id/telephone_number"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif"
+        android:hint="Telephone Number"
+        android:inputType="number"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="23sp"/>
     <ImageButton
         android:id="@+id/next_button"
         android:layout_width="74dp"
         android:layout_height="74dp"
         android:layout_gravity="bottom"
         android:background="@drawable/roundbutton"
-        android:src="@drawable/ic_trending_flat_white_48dp"
-        />
+        android:src="@drawable/ic_trending_flat_white_48dp" />
+
 </LinearLayout>
