@@ -15,6 +15,15 @@ public class Constant {
     public static String API_BASE_URL = "http:/10.45.6.1/ruraldevelopment/";//"http://192.168.42.15/sqldevtest/";//"http://192.168.0.100/usedbook/";
     public static String LOGIN_RURAL = "ruralsignin.php";
 
+    //shared prefrences
+
+    public  static  String USER_NAME = "USER_NAME";
+    public  static  String  USER_PASSWORD = "USER_PASSWORD";
+    public  static  String USER_ID = "USER_ID";
+    public  static  String USER_EXPERTISELVL = "USER_EXPERTISELVL";
+    public  static  String USER_TYPE = "USER_TYPE";
+
+
 
 
 

@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.android.volley.VolleyError;
 import com.sirt.teamdrd.ruraldeveopment.Activity.Util.Constant;
+import com.sirt.teamdrd.ruraldeveopment.Activity.Util.SharedPrefrencesManager;
 import com.sirt.teamdrd.ruraldeveopment.Activity.Util.app.RuralDevelopment;
 import com.sirt.teamdrd.ruraldeveopment.R;
 
@@ -90,6 +91,19 @@ public class MainActivity extends BaseActivity {
             }
             if(status == 200){
                 //Toast.makeText(MainActivity.this, "w")
+
+                try {
+                    SharedPrefrencesManager.setPreference(Constant.USER_NAME, edUsername.getText().toString());
+                    SharedPrefrencesManager.setPreference(Constant.USER_PASSWORD, edPassword.getText().toString());
+                    SharedPrefrencesManager.setPreference(Constant.USER_ID, response.getString("user_id").toString());
+                    SharedPrefrencesManager.setPreference(Constant.USER_EXPERTISELVL, response.getString("user_expertieslvl").toString());
+                    SharedPrefrencesManager.setPreference(Constant.USER_TYPE, response.getString("user_type").toString());
+
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
                 Intent in = new Intent(MainActivity.this, HomeActivity.class);
                 startActivity(in);
             }
@@ -105,7 +119,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void onError(VolleyError error, String message, String tag) {
-        Toast.makeText(MainActivity.this, "No connection Available", Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "message Error", Toast.LENGTH_SHORT).show();
     }
 
     private void login(String userName, String password, JSONObject loginJsonObj){

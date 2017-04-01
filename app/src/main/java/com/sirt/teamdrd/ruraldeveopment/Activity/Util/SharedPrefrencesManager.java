@@ -39,7 +39,7 @@ public class SharedPrefrencesManager {
         editor.commit();
     }
 
-    public void setPreference(String key, int value) {
+    public  void setPreference(String key, int value) {
         SharedPreferences.Editor editor = getSharedPreferencesInstances().edit();
         editor.putInt(key, value);
         editor.commit();
