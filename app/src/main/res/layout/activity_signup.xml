@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/background"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical">
+
     <EditText
         android:id="@+id/firstname"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/colorPrimary"
         android:fontFamily="sans-serif"
         android:hint="First Name"
         android:inputType="textCapWords"
         android:paddingBottom="8dp"
         android:paddingLeft="8dp"
-        android:paddingTop="8dp"
+        android:paddingTop="16dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="23sp"/>
     <EditText
         android:id="@+id/middlename"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/colorPrimary"
         android:fontFamily="sans-serif"
         android:hint="Middle Name"
@@ -36,8 +39,7 @@
     <EditText
         android:id="@+id/lastname"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/colorPrimary"
         android:fontFamily="sans-serif"
         android:hint="Last Name"
@@ -51,8 +53,7 @@
     <EditText
         android:id="@+id/date_of_birth"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/colorPrimary"
         android:fontFamily="sans-serif"
         android:hint="Date Of Birth (dd/mm/yyyy)"
@@ -107,10 +108,48 @@
 
     </RadioGroup>
     <EditText
+        android:id="@+id/username_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="sans-serif"
+        android:hint="Username"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="23sp"/>
+    <EditText
+        android:id="@+id/password_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="sans-serif"
+        android:hint="Password"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="23sp"/>
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="sans-serif"
+        android:hint="Confirm Password"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="23sp"/>
+    <EditText
         android:id="@+id/mobile_number"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/colorPrimary"
         android:fontFamily="sans-serif"
         android:hint="Mobile Number"
@@ -124,8 +163,7 @@
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/colorPrimary"
         android:fontFamily="sans-serif"
         android:hint="E-mail"
@@ -139,8 +177,7 @@
     <EditText
         android:id="@+id/telephone_number"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/colorPrimary"
         android:fontFamily="sans-serif"
         android:hint="Telephone Number"
@@ -160,3 +197,4 @@
         android:src="@drawable/ic_trending_flat_white_48dp" />
 
 </LinearLayout>
+</ScrollView>

@@ -42,11 +42,6 @@
         <activity android:name=".Activity.ProfileActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".Activity.HomeActivity"></activity>
-        <activity android:name=".Activity.SignupActivity"></activity>
-        <activity android:name=".Activity.SignupTwoActivity"></activity>
-        <activity android:name=".Activity.ProfileActivity"
-                  android:label="Profile"></activity>
     </application>
 
 </manifest>
