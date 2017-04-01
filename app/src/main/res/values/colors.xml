@@ -11,4 +11,5 @@
     <color name="itembackground">#d9e1df</color>
     <color name="transparent2">#00ffffff</color>
     <color name="blue">#027157</color>
+    <color name="seperator_color">#E0E0E0</color>
 </resources>

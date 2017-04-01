@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="120sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/applogo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/ask_question"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/info" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/seperator_color" />
+
+        <ImageView
+            android:id="@+id/my_asked_question"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/roundbutton" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/seperator_color" />
+
+        <ImageView
+            android:id="@+id/public_discussion"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/chat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Ask Question" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="My Asked Questions" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Public Discussion" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/govt_policies"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/notepad" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/seperator_color" />
+
+        <ImageView
+            android:id="@+id/profile_imageview"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/user" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@null" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:src="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Government Policies" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Profile" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@null" />
+    </LinearLayout>
+
+</LinearLayout>
