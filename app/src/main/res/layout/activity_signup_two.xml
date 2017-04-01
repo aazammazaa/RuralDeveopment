@@ -13,7 +13,7 @@
         android:inputType="textCapWords"
         android:paddingBottom="24dp"
         android:paddingLeft="8dp"
-        android:paddingTop="8dp"
+        android:paddingTop="16dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="23sp"/>
