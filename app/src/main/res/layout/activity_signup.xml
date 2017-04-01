@@ -16,7 +16,7 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/firstname"
+        android:id="@+id/firstname_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/colorPrimary"
@@ -134,9 +134,11 @@
         android:backgroundTint="@color/colorPrimary"
         android:fontFamily="sans-serif"
         android:hint="Password"
+        android:inputType="textPassword"
         android:paddingBottom="8dp"
         android:paddingLeft="8dp"
         android:paddingTop="8dp"
+
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="23sp"/>
@@ -147,6 +149,7 @@
         android:backgroundTint="@color/colorPrimary"
         android:fontFamily="sans-serif"
         android:hint="Confirm Password"
+        android:inputType="textPassword"
         android:paddingBottom="8dp"
         android:paddingLeft="8dp"
         android:paddingTop="8dp"
