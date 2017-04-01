@@ -57,13 +57,11 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) { switch(item.getItemId()) {
         case R.id.item1:
-            item.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener(){
-            public boolean onMenuItemClick(MenuItem item) {
+
                 Intent in = new Intent(BaseActivity.this, ProfileActivity.class);
                 startActivity(in);
                 return true;
-            }
-        });
+
         case R.id.item2:
             Toast.makeText(BaseActivity.this,"Logout",Toast.LENGTH_LONG).show();
     }
