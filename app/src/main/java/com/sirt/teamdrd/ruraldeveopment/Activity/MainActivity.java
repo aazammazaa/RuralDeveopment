@@ -34,7 +34,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void onSuccess(JSONObject response, String tag) {
-
+        return;
     }
 
     @Override
