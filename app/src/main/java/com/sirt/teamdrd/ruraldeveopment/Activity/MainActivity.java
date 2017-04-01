@@ -29,7 +29,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void showProgress(Boolean show, String tag) {
-
+        return;
     }
 
     @Override
