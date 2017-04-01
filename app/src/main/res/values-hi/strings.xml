@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="select_industry_type"></string>
+    <string name="app_name">किसान कल्याण</string>
+    <string name="done">पूछें</string>
+    <string name="ask_your_question">अपना प्रश्न पूछें</string>
+    <string name="login">लॉग इन</string>
+    <string name="password">पासवर्ड</string>
+    <string name="questions_found_similar">"समान प्रश्न पूछे गये"</string>
+    <string name="user_name">यूज़र आईडी</string>
+    <string name="selected_invalid_min_salary"></string>
+    <string name="submit">जमा करें</string>
+    <string name="my_asked_questions">पूछे गये प्रश्न</string>
+    <string name="search_for_queries">पूछा गया प्रश्न खोजें</string>
+    <string name="register">अकाउन्ट नहीं? रजिस्टर करें</string>
+    <string name="questions">प्रश्न</string>
+    <string name="enter_your_queries_here">अपना प्रश्न यहाँ लिखें</string>
+
+</resources>
