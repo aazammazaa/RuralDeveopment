@@ -1,7 +1,6 @@
 package com.sirt.teamdrd.ruraldeveopment.Activity;
 
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -10,7 +9,6 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
 import com.android.volley.Cache;
@@ -67,7 +65,6 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
         return super.onOptionsItemSelected(item);
     }
-    /////////
     public abstract void showProgress(Boolean show, String tag);
 
     public abstract void onSuccess(JSONObject response, String tag);

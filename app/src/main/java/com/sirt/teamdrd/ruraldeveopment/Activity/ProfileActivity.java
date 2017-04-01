@@ -19,6 +19,7 @@ public class ProfileActivity extends BaseActivity {
 
     }
 
+
     @Override
     public void showProgress(Boolean show, String tag) {
         return;
