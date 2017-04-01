@@ -1,12 +1,17 @@
 package com.sirt.teamdrd.ruraldeveopment.Activity;
 
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 import com.android.volley.Cache;
 import com.android.volley.DefaultRetryPolicy;
@@ -17,6 +22,7 @@ import com.sirt.teamdrd.ruraldeveopment.Activity.Util.Constant;
 import com.sirt.teamdrd.ruraldeveopment.Activity.Util.Network.RequestObjectJson;
 import com.sirt.teamdrd.ruraldeveopment.Activity.Util.Network.Volley.VolleyErrorListener;
 import com.sirt.teamdrd.ruraldeveopment.Activity.Util.app.RuralDevelopment;
+import com.sirt.teamdrd.ruraldeveopment.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -41,7 +47,29 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         fm = getSupportFragmentManager();
     }
-
+    ///////////
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) { switch(item.getItemId()) {
+        case R.id.item1:
+            item.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener(){
+            public boolean onMenuItemClick(MenuItem item) {
+                Intent in = new Intent(BaseActivity.this, ProfileActivity.class);
+                startActivity(in);
+                return true;
+            }
+        });
+        case R.id.item2:
+            Toast.makeText(BaseActivity.this,"Logout",Toast.LENGTH_LONG).show();
+    }
+        return super.onOptionsItemSelected(item);
+    }
+    /////////
     public abstract void showProgress(Boolean show, String tag);
 
     public abstract void onSuccess(JSONObject response, String tag);
@@ -119,12 +147,5 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
     }
 
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        return super.onOptionsItemSelected(item);
-    }
 
 }
