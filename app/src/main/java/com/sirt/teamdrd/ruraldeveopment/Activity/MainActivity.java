@@ -1,11 +1,9 @@
 package com.sirt.teamdrd.ruraldeveopment.Activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -13,7 +11,6 @@ import android.widget.Toast;
 
 import com.android.volley.VolleyError;
 import com.sirt.teamdrd.ruraldeveopment.Activity.Util.Constant;
-import com.sirt.teamdrd.ruraldeveopment.Activity.Util.app.RuralDevelopment;
 import com.sirt.teamdrd.ruraldeveopment.R;
 
 import org.json.JSONException;
@@ -25,7 +22,9 @@ public class MainActivity extends BaseActivity {
     TextView txtSignUp;
     EditText edUsername;
     EditText edPassword;
-
+    int status = 0;
+    String msg = null;
+    String userid = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,10 +58,6 @@ public class MainActivity extends BaseActivity {
     public void showProgress(Boolean show, String tag) {
         return;
     }
-
-    int status = 0;
-    String msg = null;
-    String userid = null;
 
     @Override
     public void onSuccess(JSONObject response, String tag) {
@@ -110,10 +105,10 @@ public class MainActivity extends BaseActivity {
 
     private void login(String userName, String password, JSONObject loginJsonObj){
 
-        if(!RuralDevelopment.getInstance().isNetworkAvailable()){
+        /*if(!RuralDevelopment.getInstance().isNetworkAvailable()){
             Toast.makeText(MainActivity.this, "No connection Available", Toast.LENGTH_SHORT).show();
             return;
-        }
+        }*/
         if(userName.isEmpty() && password.isEmpty() ){
             //edUsername.setError(getResources().getString(R.string.null_user_error));
             //edPassword.setError(getResources().getString(R.string.null_password_error));
