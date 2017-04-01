@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background">
-
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/district"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="sans-serif"
+        android:hint="District"
+        android:inputType="textCapWords"
+        android:paddingBottom="24dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="23sp"/>
+    <EditText
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="sans-serif"
+        android:hint="State"
+        android:inputType="textMultiLine"
+        android:paddingBottom="24dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="23sp"/>
+    <EditText
+        android:id="@+id/pincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="sans-serif"
+        android:hint="Pincode"
+        android:inputType="textCapWords"
+        android:paddingBottom="24dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="23sp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageButton
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/next_button_two"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:background="@drawable/roundbutton"
+        android:src="@drawable/ic_trending_flat_white_48dp" />
+    </RelativeLayout>
 </LinearLayout>
