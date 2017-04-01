@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
+    android:gravity="center"
     android:paddingLeft="40dp"
     android:paddingRight="40dp"
-    android:gravity="center"
     tools:context="com.sirt.teamdrd.ruraldeveopment.Activity.MainActivity">
 
 
     <ImageView
-        android:layout_marginTop="32dp"
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="134sp"
-        android:src="@drawable/applogo"
-        android:id="@+id/logo"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/applogo"
         />
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_below="@id/logo"
         android:id="@+id/login_view"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
         android:layout_centerHorizontal="true"
-        android:orientation="vertical"
-        android:layout_marginTop="56dp">
+        android:layout_marginTop="56dp"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,7 +50,7 @@
                 android:paddingBottom="8dp"
                 android:paddingLeft="8dp"
                 android:paddingTop="8dp"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/white"
                 android:textColorHint="@color/white"
                 android:textSize="23sp" />
 
@@ -69,18 +68,18 @@
 
         <EditText
             android:id="@+id/password"
-            android:inputType="textPassword"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_marginBottom="22dp"
+            android:layout_weight="1"
             android:backgroundTint="@color/colorPrimary"
-            android:hint="@string/password"
             android:fontFamily="sans-serif"
+            android:hint="@string/password"
+            android:inputType="textPassword"
             android:paddingBottom="8dp"
             android:paddingLeft="8dp"
             android:paddingTop="8dp"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:textSize="23sp" />
     </LinearLayout>
@@ -88,10 +87,10 @@
             android:id="@+id/loginbutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:background="@drawable/buttonbackfroung"
-
             android:layout_gravity="center"
+            android:layout_margin="16dp"
+
+            android:background="@drawable/buttonbackfroung"
             android:text="@string/login"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="23sp" />
