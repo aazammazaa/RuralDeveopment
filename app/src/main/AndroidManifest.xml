@@ -24,6 +24,7 @@
 
         <activity android:name=".Activity.HomeActivity"></activity>
         <activity android:name=".Activity.SignupActivity"></activity>
+        <activity android:name=".Activity.SignupTwoActivity"></activity>
     </application>
 
 </manifest>

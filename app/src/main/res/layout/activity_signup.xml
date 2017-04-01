@@ -4,4 +4,12 @@
     android:layout_height="match_parent"
     android:background="@drawable/background">
 
+    <ImageButton
+        android:id="@+id/next_button"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/roundbutton"
+        android:src="@drawable/ic_trending_flat_white_48dp"
+        />
 </LinearLayout>
