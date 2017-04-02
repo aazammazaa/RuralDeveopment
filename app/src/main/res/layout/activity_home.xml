@@ -20,6 +20,7 @@
             android:background="@drawable/buttonbackfroung"
             android:paddingBottom="8dp"
             android:paddingTop="8dp"
+            android:visibility="gone"
             android:text="@string/search_for_queries"
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
@@ -70,6 +71,7 @@
         android:orientation="vertical">
     <Button
         android:id="@+id/myqueries"
+        android:visibility="gone"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

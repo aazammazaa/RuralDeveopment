@@ -33,10 +33,11 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
-        if(!SharedPrefrencesManager.getStringPreference(Constant.USER_ID, null).equals("")){
+        if(!SharedPrefrencesManager.getStringPreference(Constant.USER_ID, "").equals("")){
             Intent in = new Intent(MainActivity.this, FrontActivity.class);
 
             startActivity(in);
+            this.finish();
 
         }
         edUsername = (EditText) findViewById(R.id.username);
@@ -112,6 +113,7 @@ public class MainActivity extends BaseActivity {
 
                 Intent in = new Intent(MainActivity.this, FrontActivity.class);
                 startActivity(in);
+                this.finish();
             }
             if(status == 400){
                 Toast.makeText(MainActivity.this, "Server Error",Toast.LENGTH_LONG).show();

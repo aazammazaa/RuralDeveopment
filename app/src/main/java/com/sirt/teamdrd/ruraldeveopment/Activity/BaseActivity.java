@@ -22,6 +22,7 @@ import com.android.volley.VolleyError;
 import com.sirt.teamdrd.ruraldeveopment.Activity.Util.Constant;
 import com.sirt.teamdrd.ruraldeveopment.Activity.Util.Network.RequestObjectJson;
 import com.sirt.teamdrd.ruraldeveopment.Activity.Util.Network.Volley.VolleyErrorListener;
+import com.sirt.teamdrd.ruraldeveopment.Activity.Util.SharedPrefrencesManager;
 import com.sirt.teamdrd.ruraldeveopment.Activity.Util.app.RuralDevelopment;
 import com.sirt.teamdrd.ruraldeveopment.R;
 
@@ -66,9 +67,14 @@ public abstract class BaseActivity extends AppCompatActivity {
                 return true;
 
         case R.id.item2:
-            Toast.makeText(BaseActivity.this,"Logout",Toast.LENGTH_LONG).show();
+                Toast.makeText(BaseActivity.this,"Logout",Toast.LENGTH_LONG).show();
+                SharedPrefrencesManager.removePreference(Constant.USER_ID);
+                Intent ins = new Intent(BaseActivity.this, MainActivity.class);
+                startActivity(ins);
+            default:
+                return super.onOptionsItemSelected(item);
     }
-        return super.onOptionsItemSelected(item);
+        //return super.onOptionsItemSelected(item);
     }
     /////////
     public abstract void showProgress(Boolean show, String tag);

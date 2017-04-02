@@ -1,8 +1,6 @@
 package com.sirt.teamdrd.ruraldeveopment.Activity.Util;
 
-/**
- * Created by Aazam on 19/11/2016.
- */
+
 
 public class Constant {
     public static final int REQUEST_IMAGE_CAPTURE = 1 ;
@@ -16,6 +14,7 @@ public class Constant {
     public static String LOGIN_RURAL = "ruralsignin.php";
     public static String POST_RURAL = "post.php";
     public static String SEARCH_RURAL = "search.php";
+    public static String FORUM_RURAL = "forum.php";
 
     //shared prefrences
 

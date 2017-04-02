@@ -61,8 +61,8 @@ public class MachedQuries extends BaseActivity {
             @Override
             public void onClick(View v) {
                 postQuery(jsonObjectPost, SharedPrefrencesManager.getStringPreference(Constant.CURRENT_QUESTION_DETAILS, null));
-                Intent in = new Intent(MachedQuries.this, DiscussionForum.class);
-                startActivity(in);
+                /*Intent in = new Intent(MachedQuries.this, DiscussionForum.class);
+                startActivity(in);*/
             }
         };
     }
