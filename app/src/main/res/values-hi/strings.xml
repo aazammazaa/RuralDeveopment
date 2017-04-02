@@ -6,7 +6,7 @@
     <string name="ask_your_question">अपना प्रश्न पूछें</string>
     <string name="login">लॉग इन</string>
     <string name="password">पासवर्ड</string>
-    <string name="questions_found_similar">"समान प्रश्न पूछे गये"</string>
+    <string name="questions_found_similar"> "समान प्रश्न पूछे गये"</string>
     <string name="user_name">यूज़र आईडी</string>
     <string name="selected_invalid_min_salary"></string>
     <string name="submit">जमा करें</string>

@@ -69,7 +69,19 @@ public class HomeActivity extends BaseActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                postQuery(jsonObjectPost, queryText.getText().toString());
+
+                if(!queryText.getText().toString().equals("")){
+
+                    SharedPrefrencesManager.setPreference(Constant.CURRENT_QUESTION_DETAILS, queryText.getText().toString());
+                    queryText.setText("");
+                    Intent in = new Intent(HomeActivity.this, MachedQuries.class);
+                    startActivity(in);
+
+                }else{
+                    Toast.makeText(HomeActivity.this, "Please fill the Query Box", Toast.LENGTH_SHORT).show();
+                }
+
+
 
             }
         };
@@ -82,7 +94,7 @@ public class HomeActivity extends BaseActivity {
     int status = 0;
     @Override
     public void onSuccess(JSONObject response, String tag) {
-        Log.e("ERROR", response.toString());
+        /*Log.e("ERROR", response.toString());
         try {
             status = response.getInt("status");
         } catch (JSONException e) {
@@ -90,6 +102,7 @@ public class HomeActivity extends BaseActivity {
         }
         if(status == 200){
             try {
+                queryText.setText("");
                 SharedPrefrencesManager.setPreference(Constant.CURRENT_QUESTION_ID, response.getString("query_id").toString());
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -102,7 +115,7 @@ public class HomeActivity extends BaseActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
 
 
     }
@@ -112,8 +125,9 @@ public class HomeActivity extends BaseActivity {
         Log.e("ERROR", message + SharedPrefrencesManager.getStringPreference(Constant.USER_ID, null));
     }
 
-    public void postQuery(JSONObject jsonObjectPost, String queryDetails){
+    /*public void postQuery(JSONObject jsonObjectPost, String queryDetails){
         try {
+            SharedPrefrencesManager.setPreference(Constant.CURRENT_QUESTION_DETAILS, queryDetails);
             jsonObjectPost.put("query_detail",queryDetails);
             jsonObjectPost.put("query_type","0");
             jsonObjectPost.put("query_id","");
@@ -125,5 +139,5 @@ public class HomeActivity extends BaseActivity {
             e.printStackTrace();
         }
 
-    }
+    }*/
 }
