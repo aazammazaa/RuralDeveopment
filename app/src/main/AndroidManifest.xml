@@ -53,7 +53,7 @@
             android:label="@string/app_name"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".Activity.ProfileActivity"
+            android:name=".Activity.FrontActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"></activity>
     </application>
