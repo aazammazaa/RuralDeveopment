@@ -20,4 +20,12 @@
     <string name="null_password_error">Please insert password</string>
     <string name="wrong_password_error">Wrong Password</string>
     <string name="user_not_exists">User Name do not exist</string>
+
+    <!--post queries-->
+    <string name="question_submitted">Your question is sucesfully submitted</string>
+    <string name="answer_submitted">Your answer is sucesfully submitted</string>
+
+    <!--post queries-->
+    <string name="question_error">please tyr again</string>
+
 </resources>

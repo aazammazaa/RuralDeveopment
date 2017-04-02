@@ -30,17 +30,18 @@ public class FrontActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
 
-                //  Intent in = new Intent(getApplicationContext(), SignupTwoActivity.class);
-                // startActivity(in);
-                overridePendingTransition(R.anim.slide_right, R.anim.slide_in);
+            Intent in = new Intent(getApplicationContext(), HomeActivity.class);
+            startActivity(in);
+            overridePendingTransition(R.anim.slide_right, R.anim.slide_in);
             }
         });
         view2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                // Intent in = new Intent(getApplicationContext(), SignupTwoActivity.class);
-                // startActivity(in);
+                Intent in = new Intent(FrontActivity.this, SearchQuery.class);
+                in.putExtra("MY_QUERIES",true);
+                startActivity(in);
                 overridePendingTransition(R.anim.slide_right, R.anim.slide_in);
             }
         });
@@ -48,8 +49,11 @@ public class FrontActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
 
-                //Intent in = new Intent(getApplicationContext(), SignupTwoActivity.class);
-                // startActivity(in);
+                /*Intent in = new Intent(getApplicationContext(), SignupTwoActivity.class);
+                 startActivity(in);*/
+                Intent in = new Intent(FrontActivity.this, SearchQuery.class);
+                in.putExtra("MY_QUERIES",false);
+                startActivity(in);
                 overridePendingTransition(R.anim.slide_right, R.anim.slide_in);
             }
         });
