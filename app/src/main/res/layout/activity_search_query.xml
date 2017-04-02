@@ -34,7 +34,7 @@
             android:id="@+id/searchkeyword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/ask_your_question"
+            android:hint="@string/ask_your_question"
             android:textSize="23dp"
             android:layout_toLeftOf="@+id/searchbutton"
             android:textColor="@color/colorPrimaryDark"

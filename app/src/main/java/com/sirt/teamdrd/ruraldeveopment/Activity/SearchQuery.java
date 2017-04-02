@@ -59,7 +59,7 @@ public class SearchQuery extends BaseActivity {
             type = "3";
             onSearchQueries(searchJsonObject);
         }
-
+        query = "";
         searchButton = (ImageButton) findViewById(R.id.searchbutton);
 
         queryRecycler = (RecyclerView) findViewById(R.id.query_recycler);

@@ -33,6 +33,12 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
+        if(!SharedPrefrencesManager.getStringPreference(Constant.USER_ID, null).equals("")){
+            Intent in = new Intent(MainActivity.this, FrontActivity.class);
+
+            startActivity(in);
+
+        }
         edUsername = (EditText) findViewById(R.id.username);
         edPassword = (EditText) findViewById(R.id.password);
         loginJsonObj = new JSONObject();
