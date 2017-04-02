@@ -37,7 +37,7 @@ public class SearchQuery extends BaseActivity {
     JSONArray searchJsonArray;
 
     String type ;
-    String query;
+    String query="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -141,7 +141,7 @@ public class SearchQuery extends BaseActivity {
                 searchJsonObject.put("user_id", SharedPrefrencesManager.getStringPreference(Constant.USER_ID, null));
             }else{
                 searchJsonObject.put("search_type", "1");
-                searchJsonObject.put("user_id", "");
+                searchJsonObject.put("user_id",SharedPrefrencesManager.getStringPreference(Constant.USER_ID, null));
             }
 
             //searchJsonObject.put("user_id", SharedPrefrencesManager.getStringPreference(Constant.USER_ID, null));
