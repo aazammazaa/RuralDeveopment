@@ -10,7 +10,7 @@ public class Constant {
 
 
 
-    public static String API_BASE_URL = "http:/10.45.6.1/ruraldevelopment/";//"http://192.168.42.15/sqldevtest/";//"http://192.168.0.100/usedbook/";
+    public static String API_BASE_URL = "http:/192.168.42.15/ruraldevelopment/";//"http://192.168.42.15/sqldevtest/";//"http://192.168.0.100/usedbook/";
     public static String LOGIN_RURAL = "ruralsignin.php";
     public static String POST_RURAL = "post.php";
     public static String SEARCH_RURAL = "search.php";
@@ -28,7 +28,9 @@ public class Constant {
     public  static  String CURRENT_QUESTION_ID = "CURRENT_QUERY";
     public  static  String CURRENT_QUESTION_DETAILS = "CURRENT_QUERY_DETAILS";
 
-
+    //post method aswer
+    public  static  String CURRENT_ANSWER_ID = "CURRENT_QUERY_ANSWER";
+    public  static  String CURRENT_ANSWER_DETAILS = "CURRENT_QUERY_ANSWER_DETAILS";
 
     //http://192.168.10.235:8000/v1/api/deals/<dealId>/comments/
 

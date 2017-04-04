@@ -61,21 +61,23 @@ public class QueryFoundAdapter extends RecyclerView.Adapter<QueryFoundAdapter.Qu
         try {
             jobj = jsonArray.getJSONObject(position);
             holder.tv.setText(jobj.getString("query_detail"));
+            holder.ln.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        SharedPrefrencesManager.setPreference(Constant.CURRENT_QUESTION_ID, jobj.getString("query_id").toString());
+                        SharedPrefrencesManager.setPreference(Constant.CURRENT_QUESTION_DETAILS,jobj.getString("query_detail"));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    Intent in = new Intent(context, DiscussionForum.class);
+                    context.startActivity(in);
+                }
+            });
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        holder.ln.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    SharedPrefrencesManager.setPreference(Constant.CURRENT_QUESTION_ID, jobj.getString("query_id").toString());
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-                Intent in = new Intent(context, DiscussionForum.class);
-                context.startActivity(in);
-            }
-        });
+
 
 
     }

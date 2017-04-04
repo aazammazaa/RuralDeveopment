@@ -114,6 +114,7 @@ public class MachedQuries extends BaseActivity {
                 try {
                     //queryText.setText("");
                     SharedPrefrencesManager.setPreference(Constant.CURRENT_QUESTION_ID, response.getString("query_id").toString());
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }

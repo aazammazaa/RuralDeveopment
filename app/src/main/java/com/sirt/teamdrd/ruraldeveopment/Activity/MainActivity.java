@@ -76,7 +76,7 @@ public class MainActivity extends BaseActivity {
     public void onSuccess(JSONObject response, String tag) {
         //Toast.makeText(MainActivity.this, response.toString(),Toast.LENGTH_LONG).show();
         Log.e("msg",response.toString());
-        if(tag.equals(Constant.LOGIN_RURAL)){
+       // if(tag.equals(Constant.LOGIN_RURAL)){
             try {
                 status = response.getInt("status");
                 msg = response.getString("msg");
@@ -121,7 +121,7 @@ public class MainActivity extends BaseActivity {
 
             }
 
-        }
+        //}
         return;
     }
 
